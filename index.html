@@ -30,7 +30,9 @@
             </div>
         </div>
     </section>
-    <header class="container">
+
+    <!-- Header -->
+    <header class="container" id="home">
         <!-- Navigation bar -->
         <nav class="navbar">
             <div class="logo">
@@ -43,8 +45,6 @@
                 <li><a href="">Top Donors</a></li>
                 <li><a href="">Available Donors</a></li>
                 <li><a href="">Profile</a></li>
-                <!-- <li><a href="">Log In</a></li> -->
-                <!-- <li><a href="">Sign Up</a></li> -->
             </ul>
             <div class="menu-icon">
                 <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
@@ -166,13 +166,83 @@
                 </div>
             </div>
         </div>
+        <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form action="#" method="post">
+                <div class="input_container">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required />
+                </div>
+                <div class="input_container">
+                    <!-- <i class="fa-solid fa-message"></i> -->
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                     <!-- <img src="assets/icons/Review.png" alt=""> -->
+                    <textarea type="text"  name="message" placeholder="Feedback here"></textarea>
+                </div>
+
+                <input type="submit" value="SUBMIT" class="btn-primary"/>
+
+            </form>
+        </div>
     </main>
 
     <!-- Footer Section -->
     <footer class="container">
-
+        <div class="footer-wrapper">
+            <div class="footer-first-column">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="footer-text">
+                    <p>At Aldam, our mission is to save lives by promoting and facilitating blood donation.</p>
+                </div>
+                <div class="footer-social">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-second-column">
+                <h3>About</h3>
+                <p>Design by <br> <b>MD. Ibrahim</b> </p>
+                <p>Fontend Developed by <br> <b>Faisal Ahammod</b> </p>
+                <p>Backend Developed by <br> <b>Thofiqul Islam</b> </p>
+                <p>Company belongs to <br> <b>Markin bracknell Ai</b> </p>
+            </div>
+            <div class="footer-third-column">
+                <h3>Partnership</h3>
+                <p>Bobbin</p>
+            </div>
+            <div class="footer-fourth-column">
+                <h3>Contacts</h3>
+                <p>01890429462</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Copyright -->
+     <section class="copyright">
+        <div class="container">
+            <div class="copyright-text">
+                <p>2024 ALDAM. All Right Reserved</p>
+            </div>
+            <div class="goto-top-btn">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+     </section>
     <!-- Script For Navbar Toggle menue of nabvar -->
     <script>
         let menuList = document.getElementById("menuList");
