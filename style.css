@@ -69,10 +69,12 @@ html,body{
 .navbar ul li:hover{
     background: #C60513;
     color: #fff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .navbar ul li a{
-    font-size: clamp(16px, 2vw,20px);
+    /* font-size: 20px; */
+    font-size: clamp(16px, 1.7vw, 20px);
     font-weight: 600;
     text-decoration: none;
     color: inherit;
@@ -89,6 +91,7 @@ html,body{
     font-size: 30px;
 }
 
+/* Banner */
 .banner{
     display: grid;
     background: url("assets/images/human-blood-donate.png");
@@ -98,8 +101,6 @@ html,body{
     padding: 30px 0px;
 }
 
-
-/* Banner */
 .banner-text{
     width: 90%;
     margin: 50px auto;
@@ -122,7 +123,7 @@ html,body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px 0px;
+    margin-top: 30px;
 }
 .btn-primary{
     font-size: 23px;
@@ -136,7 +137,7 @@ html,body{
     cursor: pointer;
 }
 
-.banner-buttons .btn-primary{
+.banner-buttons .btn-primary:hover{
     box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -144,17 +145,16 @@ html,body{
     display: none;
 }
 
-
+/* Responsive Header */
 
 /* Screen extra small */
 /* @media (width<576px) {
     
 } */
+
 /* Screen small */
-@media (min-width:576px) {
-    
-    
-}
+/* @media (min-width:576px) { 
+} */
 
 /* Screen medium */
 @media (min-width:768px) {
@@ -184,7 +184,6 @@ html,body{
         cursor: pointer;
     }
 
-
     /* Navigation bar */
     .navbar{
         padding: 10px;
@@ -206,7 +205,6 @@ html,body{
         display: none;
     }
 
-
     /* Banner */
     .banner{
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -224,7 +222,6 @@ html,body{
     }
     .banner-buttons{
         flex-direction: row;
-        margin-top: 30px;
     }
 }
 
@@ -244,9 +241,102 @@ html,body{
 }
 
 /* Screen extra large */
-@media (min-width:1200px) {
-    /* .navbar ul li a{
-        font-size: 20px;
-    } */
-      
+/* @media (min-width:1200px) {
+
+} */
+
+
+/* Body & Cards*/
+
+/* Cards Header */
+.card-wrapper{
+    padding: 20px;
+}
+
+.card-header h2{
+    text-align: center;
+    font-size: clamp(38px, 5vw, 50px);
+    font-weight: 900;
+    color: #343434;
+}
+
+.card-header div{
+    border: 2px solid #C60513;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.card-header p{
+    text-align: justify;
+    font-size: clamp(16px, 2vw,20px);
+    font-weight: 500;
+    color: #343434;
+    margin-top: 20px;
+}
+
+/* Cards */
+.card-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+}
+
+.card-title h2{
+    margin: 50px 0px 30px 0px;
+    padding: 10px;
+    text-align: center;
+    color:#C60513;
+    font-size: clamp(20px, 2.7vw,24px);
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    background: #f0f0f0;
+}
+
+.card div{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card div h3{
+    font-size: clamp(20px, 2.7vw,24px);
+    font-weight: 700;
+}
+
+.card div p{
+    font-size: clamp(16px, 2vw,20px);
+    font-weight: 400;
+}
+
+
+@media (min-width:576px) {
+    .card-header{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-header p{
+        text-align: center;
+    }
 }
