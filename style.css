@@ -1,0 +1,252 @@
+/* Lato Link */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: "Lato", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* Don't touch */
+.container{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+/* Top bar */
+.topbar{
+    display: none;
+}
+
+/* Navigation Bar */
+.navbar{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo img{
+    width: 70%;
+}
+
+.navbar ul{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    /* left: 0; */
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    overflow: hidden;
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    color: #343434;
+
+}
+
+.navbar ul li:hover{
+    background: #C60513;
+    color: #fff;
+}
+
+.navbar ul li a{
+    font-size: clamp(16px, 2vw,20px);
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+.navbar ul li a:hover{
+    color: inherit;
+}
+
+.menu-icon{
+    cursor: pointer;
+}
+.menu-icon i{
+    color: #C60513;
+    font-size: 30px;
+}
+
+.banner{
+    display: grid;
+    background: url("assets/images/human-blood-donate.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px 0px;
+}
+
+
+/* Banner */
+.banner-text{
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.banner-text h1{
+    font-size: clamp(38px, 5vw, 50px);
+    font-weight: 900;
+    color: #343434;
+}
+
+.banner-text p{
+    font-size: clamp(16px, 2vw,20px);
+    font-weight: 500;
+    color: #343434;
+}
+
+.banner-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0px;
+}
+.btn-primary{
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+    background: #C60513;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.banner-buttons .btn-primary{
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.banner-img{
+    display: none;
+}
+
+
+
+/* Screen extra small */
+/* @media (width<576px) {
+    
+} */
+/* Screen small */
+@media (min-width:576px) {
+    
+    
+}
+
+/* Screen medium */
+@media (min-width:768px) {
+    /* Top bar */
+    .topbar{
+        display: block;
+        background: #C60513;
+    }
+    .topbar-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 100px;
+        color: #fff;
+    }
+    .topbar .contact{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .topbar .social{
+        display: flex;
+        gap: 10px;
+    }
+
+    .topbar i{
+        cursor: pointer;
+    }
+
+
+    /* Navigation bar */
+    .navbar{
+        padding: 10px;
+    }
+    .navbar ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+    }
+    .navbar ul li{
+        margin: 0px;
+        padding: 10px;
+    }
+    .menu-icon{
+        display: none;
+    }
+
+
+    /* Banner */
+    .banner{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        background: none;
+    }
+    .banner-text{
+        text-align: left;
+        align-self: center;
+    }
+    .banner-img{
+        display: block;
+    }
+    .banner-img img{
+        width: 90%;
+    }
+    .banner-buttons{
+        flex-direction: row;
+        margin-top: 30px;
+    }
+}
+
+/* Screen large */
+@media (min-width:992px) {
+
+    /* Logo */
+    .logo img{
+        width: 100%;
+    }
+    .navbar{
+        padding: 10px 30px;
+    }
+    .navbar ul li{
+        padding: 15px;
+    }
+}
+
+/* Screen extra large */
+@media (min-width:1200px) {
+    /* .navbar ul li a{
+        font-size: 20px;
+    } */
+      
+}

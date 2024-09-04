@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Red top bar of the website -->
+    <section class="topbar">
+        <div class="container topbar-wrapper">
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-square-phone"></i>
+                <p>000 000 000</p>
+            </div>
+        </div>
+    </section>
+    <header class="container">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">Donate Blood</a></li>
+                <li><a href="">Find Donors</a></li>
+                <li><a href="">Top Donors</a></li>
+                <li><a href="">Available Donors</a></li>
+                <li><a href="">Profile</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Donate Blood, Save Humanity!</h1>
+                <p>Your donation can make a difference. Join us in saving humanitys.</p>
+                <div class="banner-buttons">
+                    <button class="btn-primary">
+                        Donate Now
+                    </button>
+                    <button class="btn-primary">
+                        Find Donors
+                    </button>
+                </div>
+            </div>
+            
+            <div class="banner-img">
+                <img src="assets/images/human-blood-donate-white.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <!-- Body -->
+    <main class="container">
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container">
+
+    </footer>
+
+    <!-- Script For Navbar Toggle menue of nabvar -->
+    <script>
+        let menuList = document.getElementById("menuList");
+        window.addEventListener('DOMContentLoaded', function () {
+            if (window.innerWidth >= 768) {
+                menuList.style.height = 'auto';
+            } else {
+                menuList.style.height = '0px';
+            }
+        });
+
+        function toggleMenu(){
+            if(menuList.style.height == "0px")
+            {
+                menuList.style.height = "auto";
+            }
+            else{
+                menuList.style.height = "0px";
+            }
+        }
+
+        // This function is not necessary for users but for dev mode
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 768) {
+                menuList.style.height = 'auto';
+            } else {
+                menuList.style.height = '0px';
+            }
+        });
+
+
+        
+    </script>
+</body>
+
+</html>
